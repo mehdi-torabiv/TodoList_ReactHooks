@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Todo from "./Components/Todo";
+import "./App.css";
 function App() {
   const [todos, setTodos] = useState([
     {
@@ -16,7 +17,7 @@ function App() {
     }
   ]);
   return (
-    <div className="App">
+    <div className="app">
       <div className="TodoList">
         {todos.map((todo, index) => (
           <Todo key={index} index={index} todo={todo} />
