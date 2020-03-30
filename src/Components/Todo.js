@@ -5,10 +5,10 @@ function Todo(props) {
         <div style={{ textDecoration: props.todo.isCompleted ? "line-through" : '' }} className="Todo">
             {props.todo.text}
             <div>
-                <button onClick={() => props.CompleteTodo(props.index)}>
+                <button className="buttons" onClick={() => props.CompleteTodo(props.index)}>
                     Complete
                 </button>
-                <button onClick={() => props.deleteTodo(props.index)}>
+                <button className="buttons" onClick={() => props.deleteTodo(props.index)}>
                     x
                 </button>
             </div>

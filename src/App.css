@@ -11,6 +11,21 @@
   max-width: 400px;
 }
 
+.buttons {
+  background-color: rgb(231, 231, 231);
+  border-radius: 3px;
+  outline: none;
+  border: 1px #fff;
+  color: black;
+  margin-right: .5rem;
+  padding: .2rem .8rem;
+}
+
+.buttons:hover {
+  background-color: red;
+  color: white;
+}
+
 .Todo {
   background: #fff;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
