@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-function Todo() {
+function Todo(props) {
     return (
-        <div>
-            create todo component!
+        <div className="Todo">
+            {props.todo.text}
         </div>
     );
 }
