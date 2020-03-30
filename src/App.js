@@ -16,8 +16,12 @@ function App() {
     }
   ]);
   return (
-    <div>
-
+    <div className="App">
+      <div className="TodoList">
+        {todos.map((todo, index) => (
+          <Todo key={index} index={index} todo={todo} />
+        ))}
+      </div>
     </div>
   );
 }
